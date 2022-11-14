@@ -9,10 +9,10 @@ export const Header = (props) => {
     <React.Fragment>
         <header className={classes.header}>
             <h1>ReactBakery</h1>
-            <HeaderCartButton />
+            <HeaderCartButton onClick={props.onShowCart}/>
         </header>
         <div className={classes["main-image"]}>
-            <img src="meals.jpg" alt="A table full of delicious food" />
+            <img src="meals.jpg" alt="A table full of food" />
         </div>
     </React.Fragment>
   )
